@@ -123,6 +123,14 @@ section { padding: var(--space-section-y-sp) 0; }
 
 .section-cta { text-align: center; margin-top: 56px; }
 
+.section-cta__or {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  letter-spacing: .05em;
+  color: rgba(43,43,43,0.45);
+  margin: 22px 0 14px;
+}
+
 /* ---------- Header ---------- */
 
 .site-header {
