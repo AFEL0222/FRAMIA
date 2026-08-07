@@ -403,6 +403,32 @@ section { padding: var(--space-section-y-sp) 0; }
   color: rgba(43, 43, 43, 0.85);
 }
 
+.founder__strength {
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--ivory);
+  border-radius: var(--radius-s);
+  border-left: 3px solid var(--camel);
+}
+.founder__strength__label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: .15em;
+  color: var(--camel);
+  margin: 0 0 10px;
+}
+.founder__strength__title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+.founder__strength__text {
+  font-size: 13.5px;
+  line-height: 1.9;
+  color: rgba(43, 43, 43, 0.8);
+  margin: 0;
+}
+
 /* ---------- Benefits ---------- */
 
 .benefits { background: var(--white); }
@@ -530,15 +556,23 @@ section { padding: var(--space-section-y-sp) 0; }
 }
 
 .proof-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   text-align: center;
   font-family: var(--font-sans);
   font-size: 13px;
   letter-spacing: .03em;
   color: rgba(247,243,234,0.85);
   border: 1px solid rgba(201,169,110,0.4);
-  padding: 14px;
+  padding: 10px 14px;
   border-radius: var(--radius-pill);
   margin: 0 0 56px;
+}
+.proof-badge__logo {
+  border-radius: 2px;
+  flex-shrink: 0;
 }
 
 .proof-voice {
