@@ -197,6 +197,7 @@ section { padding: var(--space-section-y-sp) 0; }
 
 .hero__inner {
   position: relative;
+  width: 100%;
   max-width: 720px;
   margin: 0 auto;
   padding: 0 28px;
@@ -214,6 +215,13 @@ section { padding: var(--space-section-y-sp) 0; }
   line-height: 1.45;
   color: var(--charcoal);
   margin: 0 0 28px;
+}
+
+/* 句読点（、。）は字面が仮想ボディの左下に寄っているため、
+   text-align: center でそのまま揃えると行が左に寄って見える。
+   行末の句読点だけ右マージンを詰めて視覚的な中心を揃える。 */
+.hero__headline .tail-punct {
+  margin-right: -0.5em;
 }
 
 @media (min-width: 768px) {
