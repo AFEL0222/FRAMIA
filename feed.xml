@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>FRAMIA Blog</title>
+    <link>https://www.framia.jp/blog/</link>
+    <description>結婚を急がず、自分らしい関係を整えるための読みもの。</description>
+    <language>ja</language>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>【式場で300組を見てきた人が語る】うまくいく夫婦に共通する3つのこと</title>
+      <link>https://www.framia.jp/blog/happy-couples/</link>
+      <guid isPermaLink="true">https://www.framia.jp/blog/happy-couples/</guid>
+      <description>相手を自分の言葉で語れること、自分の軸を言葉にできること、結婚後の暮らしを二人で想像できること。式場で見てきた共通点をお伝えします。</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>恋愛経験がなくても結婚相談所で婚活できる？30代からの始め方</title>
+      <link>https://www.framia.jp/blog/marriage-without-dating-experience/</link>
+      <guid isPermaLink="true">https://www.framia.jp/blog/marriage-without-dating-experience/</guid>
+      <description>恋愛経験の多さだけで婚活の結果は決まりません。自分の価値観を整理しながら一歩ずつ進める方法を紹介します。</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>結婚相談所の選び方を解説｜料金・IBJ・マッチングアプリとの違い</title>
+      <link>https://www.framia.jp/blog/how-to-choose-marriage-agency/</link>
+      <guid isPermaLink="true">https://www.framia.jp/blog/how-to-choose-marriage-agency/</guid>
+      <description>会員数だけで決めず、サポートの相性と料金の仕組みを比べることが大切です。選ぶ前に知っておきたい3つの軸を整理します。</description>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
