@@ -373,12 +373,12 @@ section { padding: var(--space-section-y-sp) 0; }
 }
 
 @media (min-width: 768px) {
-  .founder { grid-template-columns: 240px 1fr; padding: 40px; gap: 48px; }
+  .founder { grid-template-columns: 200px 1fr; padding: 40px; gap: 48px; }
 }
 
 .founder__photo img {
   width: 100%;
-  max-width: 240px;
+  max-width: 200px;
   margin: 0 auto;
   border-radius: var(--radius-s);
   object-fit: cover;
@@ -808,26 +808,24 @@ section { padding: var(--space-section-y-sp) 0; }
 /* ---------- Editorial photos ---------- */
 
 .hero { isolation: isolate; }
-.hero__photo {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  max-width: none;
-  object-fit: cover;
-  object-position: center 42%;
-  opacity: .4;
-}
 .hero::before {
   content: '';
   position: absolute;
   z-index: 1;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(247,243,234,.92), rgba(247,243,234,.72) 58%, rgba(247,243,234,.46));
+  inset: 0 0 0 auto;
+  width: 52%;
+  background: url("/img/hero_couple_wide_pro.webp") center / cover no-repeat;
 }
 .hero__frame { z-index: 2; }
 .hero__inner { z-index: 3; }
+
+@media (min-width: 768px) {
+  .hero__inner {
+    max-width: 52%;
+    margin: 0 auto 0 0;
+    padding: 0 32px;
+  }
+}
 
 .photo {
   margin: 0 0 40px;
@@ -840,12 +838,6 @@ section { padding: var(--space-section-y-sp) 0; }
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,.06);
 }
-.photo figcaption {
-  margin-top: .4rem;
-  color: #999;
-  font-family: var(--font-sans);
-  font-size: .72rem;
-}
 .photo--problem { max-width: 640px; }
 .photo--room img { aspect-ratio: 16 / 9; }
 .photo--consultation {
@@ -855,15 +847,24 @@ section { padding: var(--space-section-y-sp) 0; }
 
 .cta-section {
   position: relative;
-  isolation: isolate;
   background-color: var(--white);
 }
-.cta-section::before {
+.cta-section__intro {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 40px;
+}
+.cta-section__intro > * { position: relative; z-index: 1; }
+.cta-section__intro .section-title { margin-bottom: 0; }
+.cta-section__intro::before {
   content: '';
   position: absolute;
-  z-index: -1;
-  inset: 0 0 auto;
-  height: 300px;
+  z-index: 0;
+  top: calc(-1 * var(--space-section-y-sp));
+  left: 50%;
+  width: 100vw;
+  height: calc(100% + var(--space-section-y-sp));
+  transform: translateX(-50%);
   background-image:
     linear-gradient(rgba(250,250,246,.78), rgba(250,250,246,.78)),
     url("/img/kitchen_morning_pro.webp");
@@ -873,10 +874,12 @@ section { padding: var(--space-section-y-sp) 0; }
 }
 
 @media (max-width: 767px) {
-  .hero__photo { object-position: 58% center; }
   .hero::before {
-    background: linear-gradient(180deg, rgba(247,243,234,.66), rgba(247,243,234,.9));
+    inset: 0 0 auto;
+    width: 100%;
+    height: 220px;
+    background-position: center 35%;
   }
+  .hero__inner { margin-top: 220px; }
   .photo--problem { margin-bottom: 32px; }
-  .cta-section::before { height: 250px; }
 }

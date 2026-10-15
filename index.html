@@ -29,6 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/img/hero_couple_wide_pro.webp" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -44,7 +45,6 @@
 
   <!-- ============ Hero ============ -->
   <section id="hero" class="hero">
-    <img class="hero__photo" src="/img/hero_couple_wide_pro.webp" alt="" width="1472" height="832" fetchpriority="high" decoding="async">
     <div class="hero__frame" aria-hidden="true"></div>
     <div class="hero__inner">
       <p class="eyebrow">FRAMIA｜ライフデザイン型の結婚相談</p>
@@ -69,7 +69,6 @@
 
       <figure class="photo photo--problem">
         <img src="/img/couple_close_pro.webp" alt="明るいカフェで自然に笑い合うふたり" width="1280" height="960" loading="lazy" decoding="async">
-        <figcaption>※掲載写真はイメージです</figcaption>
       </figure>
 
       <div class="tabs" role="tablist">
@@ -116,7 +115,6 @@
 
       <figure class="photo photo--room">
         <img src="/img/room_wide_pro.webp" alt="柔らかな自然光が差し込む相談ルーム" width="1472" height="832" loading="lazy" decoding="async">
-        <figcaption>※掲載写真はイメージです</figcaption>
       </figure>
 
       <div class="stance-grid">
@@ -212,7 +210,6 @@
         <h3 class="benefit-block__title">60分で持ち帰れること</h3>
         <figure class="photo photo--consultation">
           <img src="/img/room_detail_pro.webp" alt="花とカップ、ノートを置いた相談テーブル" width="1280" height="960" loading="lazy" decoding="async">
-          <figcaption>※掲載写真はイメージです</figcaption>
         </figure>
         <ul class="checklist">
           <li><span class="checklist__num">01</span>今のあなたにとっての「結婚」を、言葉にできる。</li>
@@ -395,8 +392,10 @@
   <!-- ============ CTA ============ -->
   <section id="cta" class="cta-section">
     <div class="container">
-      <p class="eyebrow">CONTACT</p>
-      <h2 class="section-title">ここから、<br class="sp-only">あなたのペースで。</h2>
+      <div class="cta-section__intro">
+        <p class="eyebrow">CONTACT</p>
+        <h2 class="section-title">ここから、<br class="sp-only">あなたのペースで。</h2>
+      </div>
       <p class="cta-section__lead">
         結婚の前も、その先も、<br class="sp-only">あなたらしくいられるように。<br>
         まずは60分、お話ししましょう。
