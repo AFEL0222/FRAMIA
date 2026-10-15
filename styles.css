@@ -379,6 +379,7 @@ section { padding: var(--space-section-y-sp) 0; }
 .founder__photo img {
   width: 100%;
   max-width: 200px;
+  height: auto;
   margin: 0 auto;
   border-radius: var(--radius-s);
   object-fit: cover;
@@ -874,6 +875,7 @@ section { padding: var(--space-section-y-sp) 0; }
 }
 
 @media (max-width: 767px) {
+  .founder__photo img { width: 160px; }
   .hero::before {
     inset: 0 0 auto;
     width: 100%;
