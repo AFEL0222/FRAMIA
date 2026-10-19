@@ -28,9 +28,13 @@
   },
   "openingHoursSpecification": [
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday"], "opens": "10:00", "closes": "20:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "09:00", "closes": "20:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday", "PublicHolidays"], "opens": "09:00", "closes": "20:00" }
   ],
-  "areaServed": { "@type": "State", "name": "東京都" }
+  "areaServed": [
+    { "@type": "City", "name": "世田谷区" },
+    { "@type": "City", "name": "目黒区" },
+    { "@type": "City", "name": "渋谷区" }
+  ]
 }
 </script>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%232b2b2b'/%3E%3Ctext x='32' y='42' font-size='30' font-family='Georgia,serif' fill='%23c9a96e' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
@@ -464,8 +468,8 @@
       <div><dt>代表者</dt><dd>田中 陣</dd></div>
       <div><dt>所在地</dt><dd>東京都世田谷区弦巻5-8-11（<a href="/access/">アクセス・面談場所</a>）</dd></div>
       <div><dt>電話番号</dt><dd>090-8494-3356</dd></div>
-      <div><dt>営業時間</dt><dd>平日（水〜金）10:00〜20:00 ／ 土日 9:00〜20:00</dd></div>
-      <div><dt>定休日</dt><dd>月曜・火曜（事前予約制）</dd></div>
+      <div><dt>営業時間</dt><dd>平日（水〜金）10:00〜20:00 ／ 土日祝 9:00〜20:00</dd></div>
+      <div><dt>定休日</dt><dd>月曜・火曜（祝日は営業・事前予約制）</dd></div>
       <div><dt>加盟</dt><dd>IBJ正規加盟</dd></div>
       <div><dt>公式LINE</dt><dd><a href="https://lin.ee/SPYqyeJ" target="_blank" rel="noopener" data-cta="footer-line">友だち追加はこちら</a></dd></div>
       <div><dt>読みもの</dt><dd><a href="/blog/">自分らしい結婚のヒント</a></dd></div>
