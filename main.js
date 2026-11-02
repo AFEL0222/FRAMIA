@@ -91,6 +91,9 @@
         const location = el.dataset.cta;
         const eventName = location === 'floating' ? 'cta_floating_click' : 'cta_section_click';
         trackEvent(eventName, { cta_location: location });
+        if (el.href && el.href.startsWith('https://lin.ee/')) {
+          trackEvent('line_click', { cta_location: location });
+        }
       });
     });
   }
